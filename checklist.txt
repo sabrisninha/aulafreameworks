@@ -1,3 +1,3 @@
-olhos vermelhos e pelo branquinho
+ git status-> verificar a situação do nosso app
 instalar e fonfigurar o Angular
 https://angular.io/guide/setup
