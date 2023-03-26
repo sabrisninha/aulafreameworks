@@ -1,0 +1,28 @@
+@import url(https://fonts.google.com/specimen/Lilita+One);
+body{
+    background-color: rgb(75, 71, 71);
+}
+.container{
+    
+    text-align: center;
+    align-items: center;
+    
+   
+}
+#tela{
+    width: 160px;
+    background-color: rgb(243, 228, 241);
+    
+}
+
+input { 
+    bottom: 100px;
+    margin: 3px;
+padding: 35px;
+width: 50px;
+border-radius: 20%;
+text-align: center;
+font-size: medium;
+font-family: Lilita One;
+font-weight: bold;
+}
