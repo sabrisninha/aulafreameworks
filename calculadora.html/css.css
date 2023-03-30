@@ -1,16 +1,38 @@
 @import url(https://fonts.google.com/specimen/Lilita+One);
 body{
-    background-color: rgb(75, 71, 71);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+   
 .container{
     
-    text-align: center;
-    align-items: center;
-     margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto; 
+    position: absolute;
+    width: 450px;
+    height: 650px;
+    border: 3px solid #060606;
+border-radius: 10%;
+
+    background:  #050505;
+    z-index: 1;
 }
+.numbers{
+    margin-top: 10%;
+    margin-left:15%;
+margin-right: auto; 
+}
+
 #tela{
     width: 160px;
-    background-color: rgb(243, 228, 241);
+    background-color: rgb(255, 195, 243);
     
 }
 
@@ -18,10 +40,99 @@ input {
     bottom: 100px;
     margin: 3px;
 padding: 35px;
-width: 50px;
+width: 30px;
 border-radius: 20%;
 text-align: center;
-font-size: medium;
+align-items: center;
+font-size: larger;
 font-family: Lilita One;
 font-weight: bold;
+
+
+
 }
+
+
+.nume{
+    background-color: rgb(235, 181, 181);
+    color: blueviolet;
+   
+  }
+  .opert{
+    background-color: antiquewhite;
+    color: crimson;
+  }
+  
+
+.o{
+    background-image: url(./img/kuromi1.jpg);
+    background-position: center center;
+    background-size: cover;
+    color:rgb(249, 100, 210) ;
+}
+
+
+
+
+.p {
+    background-image: url(./img/melody.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.r {
+    background-image: url(./img/kuromi2.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+
+
+.t {
+    background-image: url(./img/melody1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.i {
+    background-image: url(./img/kuromibrava.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.y {
+    background-image: url(./img/melody2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.num{
+    width: 64px;
+    height: 67px;
+  }
+  
+  .text{
+    width: 159px;
+    height: 30px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .text1{
+    width: 30px;
+    height: 36px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom:12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

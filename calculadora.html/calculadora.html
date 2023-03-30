@@ -6,38 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
 
+
+<img src="./img/corachao.jpg" class="fundo">
+<img src="./img/kuromi1.jpg "  class="o">
+<img src="./img/kuromi2.jpg"   class="r">
+<img src="./img/melody.jpg" class="p">
+<img src="./img/melody1.jpg" class="t">
+<img src="./img/kuromibrava.jpg" class="i">
+<img src="./img/melody2.jpg" class="y">
+
 </html>
     <title>Document</title>
 </head>
 <body>
 
     <div class="container">
+        <div class="numbers">
         <form action=""  name="Calculator">
           <input type="text" id="tela" name="text1" class="text maincolor" disabled>
         
-          <input type="button" name="text12" class="textmaincolor" value="c" onclick="location.reload()" > <br>
+          <input type="button" name="text12" class="text2" value="c" onclick="location.reload()" > <br>
         
-          <input type="button" name="btn9" class="num maincolor" value="9" onclick="displaynum(btn9.value)" >
-          <input type="button" name="btn8" class="num maincolor" value="8" onclick="displaynum(btn8.value)" >
-          <input type="button" name="btn7"class="num maincolor" value="7" onclick="displaynum(btn7.value)" >
+          <input type="button" id="nove" name="btn9" class="nume" value="9" onclick="displaynum(btn9.value)" >
+          <input type="button" name="btn8" class="nume" value="8" onclick="displaynum(btn8.value)" >
+          <input type="button" name="btn7"class="nume" value="7" onclick="displaynum(btn7.value)" >
 
-          <input type="button" name="addbtn" class="num blue" value="+" onclick="displaynum(addbtn.value)" > <br>
+          <input type="button" name="addbtn" class="o" value="+" onclick="displaynum(addbtn.value)" > <br>
 
           
         
-          <input type="button" name="btn6" class="num maincolor" value="6" onclick="displaynum(btn6.value)" >
-          <input type="button" name="btn5" class="num maincolor" value="5" onclick="displaynum(btn5.value)" >
-          <input type="button" name="btn4" class="num maincolor" value="4" onclick="displaynum(btn4.value)" >
-          <input type="button" name="subbtn" class="num pin"  value="-" onclick="displaynum(subbtn.value)" ><br>
+          <input type="button" name="btn6" class="nume" value="6" onclick="displaynum(btn6.value)" >
+          <input type="button" name="btn5" class="nume" value="5" onclick="displaynum(btn5.value)" >
+          <input type="button" name="btn4" class="nume" value="4" onclick="displaynum(btn4.value)" >
+          <input type="button" name="subbtn" class="p"  value="-" onclick="displaynum(subbtn.value)" ><br>
         
-          <input type="button" name="btn3" class="num  maincolor" value="3" onclick="displaynum(btn3.value)" >
-          <input type="button" name="btn2" class="num maincolor" value="2" onclick="displaynum(btn2.value)" >
-
-
-
-   
-    
-          <input type="button" name="btn1" class="num maincolor" value="1" onclick="displaynum(btn1.value)"
+          <input type="button" name="btn3" class="nume" value="3" onclick="displaynum(btn3.value)" >
+          <input type="button" name="btn2" class="nume" value="2" onclick="displaynum(btn2.value)" >
+          <input type="button" name="btn1" class="nume" value="1" onclick="displaynum(btn1.value)"
          
           
           >
@@ -46,20 +51,23 @@
 
 
 
-          <input type="button" name="multbtn" class="num gre" value="*" onclick="displaynum(multbtn.value)" ><br>
+          <input type="button" name="multbtn" class="r" value="*" onclick="displaynum(multbtn.value)" ><br>
         
-          <input type="button" name="dotbnt" id="dot" class="num  maincolor" value="." onclick="displaynum
-          (dotbnt.value)" >
-          <input type="button" name="btn0" class="num maincolor" value="0" onclick="displaynum(btn2.value)" >
-          <input type="button" name="elqbtn" class="num pur" value="=" onclick="text1.value=eval(text1.value)" >
-          <input type="button" name="divbtn" class="num ora" value="/" onclick="displaynum(divbtn.value)" ><br>
+          <input type="button" name="dotbnt" id="dot" class="t" value="." onclick="displaynum(dotbnt.value)" >
+          
+          <input type="button" name="btn0" class="nume" value="0" onclick="displaynum(btn2.value)" >
+
+          <input type="button" name="elqbtn" class="y" value="=" onclick="text1.value=eval(text1.value)" >
+
+          <input type="button" name="divbtn" class="i" value="/" onclick="displaynum(divbtn.value)" ><br>
 
           
         
           
 
         </form>
-        
+    </div>
+
         </div> 
 </body>
 <script src="script.js"></script>
