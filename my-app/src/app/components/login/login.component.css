@@ -17,8 +17,22 @@ h2{
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
     margin-bottom: 5px;
+    
    
 }
+
+.sucess{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(73, 231, 107);
+    width: 345px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    margin-bottom: 5px;}
+    
+    
 .container {
     background: #9633FF;
     height:100vh ;
@@ -54,6 +68,7 @@ h2{
 }
 
 .input input {
+    font-size: 18px;
     height: 30px;
     margin-left: 5px;
     border: none;
@@ -94,7 +109,9 @@ i {
     background: linear-gradient(60deg, #9734FF, rgb(78,78, 209) );
     color: #fff;
 }
-
+.button:hover{
+    filter: brightness(140%)
+}
 h3{
     font-weight: 400;
 }
