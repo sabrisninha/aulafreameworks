@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class CreateUserComponent {
 
+isError = ''
+isSucess = ''
+
+
+user = ''
+pwd = ''
+double = ''
+  login() {
+
+    console.log("user = " + this.user + "Password = " + this.pwd  )
+
+    }
+
 }
+
+
