@@ -1,4 +1,4 @@
-
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <div class="container">
   <div class="create-user">
@@ -6,8 +6,12 @@
 
   <div class="error" *ngIf = "isError">
       <i class='bx bxs-comment-error' style='color:#9633ff'  ></i>
-   <span>Esse emãil já está cadastrado</span>
-  </div>////quando email der erro
+   <span>As senhas não correspondem</span>
+  </div>
+  <div class="sucess" *ngIf = "isSucess">
+    <i class='bx bxs-comment-error' style='color:#9633ff'  ></i>
+ <span>succes</span>
+</div>
 
 
   <div class="input">
@@ -26,5 +30,5 @@
 </div>
 
 <button class="button"  (click)="login()"> create</button>
-  </div>
 </div>
+

@@ -7,19 +7,27 @@ import { Component } from '@angular/core';
 })
 export class CreateUserComponent {
 
-isError = ''
-isSucess = ''
+isError = false;
+isSucess = false;
 
 
-user = ''
-pwd = ''
-double = ''
+user = ""
+pwd = ""
+double = ""
   login() {
 
     console.log("user = " + this.user + "Password = " + this.pwd  )
+    if ( this.pwd === this.double ) {
+      console.log("login aprovado")
+      this.isError = false;
+      this.isSucess = true;
+    }
 
+    else {
+      this.isError = true;
+      this.isSucess = false;
     }
 
 }
-
+}
 

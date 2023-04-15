@@ -10,9 +10,9 @@ const routes: Routes = [
   {
     path:'heros', component: HeroComponent},
     {path: 'login', component: LoginComponent},
-    {path:'**', component: PageNotFoundComponent },
-    {path: 'creat', component:CreateUserComponent},
+    {path: 'create', component:CreateUserComponent},
     {path: '', redirectTo: '/login', pathMatch :'full'},
+    {path:'**', component: PageNotFoundComponent },
 
 ]
 
