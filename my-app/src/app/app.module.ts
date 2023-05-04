@@ -8,6 +8,10 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { PaginaComponent } from './components/pagina/pagina.component';
+import { LogComponent } from './components/log/log.component';
+import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
     HeroComponent,
     LoginComponent,
     PageNotFoundComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    PaginaComponent,
+    LogComponent,
+    CriarUsuarioComponent
+
   ],
   imports: [
     BrowserModule,
