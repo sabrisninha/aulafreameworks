@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { LogComponent } from './components/log/log.component';
 import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
     {path: 'pagina', component:PaginaComponent},
     {path: 'log', component:LogComponent},
     {path: 'criar-usuario', component:CriarUsuarioComponent},
+    {path: 'dashboard', component:DashboardComponent},
     {path: '', redirectTo: '/login', pathMatch :'full'},
     {path:'**', component: PageNotFoundComponent },
 

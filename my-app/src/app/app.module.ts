@@ -11,6 +11,7 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
 import { PaginaComponent } from './components/pagina/pagina.component';
 import { LogComponent } from './components/log/log.component';
 import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.
     CreateUserComponent,
     PaginaComponent,
     LogComponent,
-    CriarUsuarioComponent
+    CriarUsuarioComponent,
+    DashboardComponent
 
   ],
   imports: [
