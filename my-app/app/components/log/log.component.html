@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="login">
+      <h2> Acesse sua conta.
+      </h2>
+       <div class="error" *ngIf = "isError">
+          <i class='bx bxs-comment-error' style='color:#9633ff'  ></i>
+       <span>Login ou senha incorreto!</span>
+      </div>
+
+
+      <div class="sucess" *ngIf = "isSucess">
+         <i class='bx bxs-comment-error' style='color:#9633ff'  ></i>
+      <span>succes</span>
+     </div>
+
+      <div class="input">
+          <i class='bx bxs-envelope' style='color:#8115f1' ></i>
+          <input type="text" name="login" id="login" placeholder="E-mail" [(ngModel)]="user">
+      </div>
+      <div class="input">
+          <i class='bx bxs-lock-alt' style='color:#8115f1' ></i>
+          <input type="password" name="senha" id="password" placeholder="Password" [(ngModel)]="pwd">
+          <i class='bx bx-low-vision' style='color:#8115f1' ></i>
+      </div>
+
+
+
+      <div class="remember">
+
+          <div>
+              <input type="checkbox" name="remember" id="remember" />
+              <h3>Me lembre!</h3>
+          </div>
+
+          <a href="#">Esqueceu sua senha?</a>
+      </div>
+
+
+      <button class="button"  (click)="login()"> Comece</button>
+      <a href="./create-user.component.htm">Não tem uma conta? Crie uma!</a>
+
+
+  </div>
+</div>
