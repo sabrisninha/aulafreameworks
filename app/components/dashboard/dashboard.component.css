@@ -2,27 +2,37 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
-h4{
-  font-size: 12px;
-  color: #bab4e5;
+h4 {
+  font-size: 11px;
+
   margin-top: 5px;
+}
+
+h5 {
+  font-size: 10px;
+  margin-top: 10px;
+}
+h2{
+  font-size: 16px;
+ 
 }
 
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: 60px 1fr;
-  grid-template-columns: 200px 1fr 300px;
+  grid-template-columns: 200px 1fr 360px;
   box-shadow: 0 0 20px 10px #ccc;
-  border-radius: 20px;
+ 
 }
 
 .menu {
@@ -55,7 +65,6 @@ h4{
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .header2 i {
@@ -115,11 +124,32 @@ section {
   gap: 20px;
 }
 
+section .box1 .member {
+  background: #f8fafd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px 60px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+section .box1 .member .card-member {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+section .box1 .member .card-member img {
+  width: 50px;
+}
+
 section .box2 {
   background: #3af;
 }
 
 .title {
+
   background: #e4f7f0;
   height: 45px;
   display: flex;
@@ -129,7 +159,11 @@ section .box2 {
   box-shadow: 0 0 5px 4px #eee;
 }
 
+.title button:hover {
+  filter: brightness(140%);
+}
 .title button {
+  cursor: pointer;
   background: #40c17d;
   color: #fff;
   border-radius: 50%;
@@ -146,112 +180,174 @@ section .box2 {
   margin-left: 15px;
 }
 
-section .box1 .member{
-  background: #f8fafd;
+/* .container .user-info {
+
+} */
+
+.content .activity {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 60px 60px;
-  margin: 20px 0;
-  padding: 20px;
+  grid-template-rows: 80px 80px;
   gap: 10px;
-}
-    
-section .box1 .member .card-member {
-    align-items: center;
-  display: grid;
-  grid-template-columns: 80px 1fr;
+  margin-top: 20px;
 }
 
-section .box1 .member .card-member img {
+.content .activity div {
+  background: #f8fafd;
+}
+
+.activity .card-member img {
   width: 40px;
 }
 
-
-
-.container .user-info{
-    display: grid;
-    grid-template-rows: 75px 1fr 100px 200px 1fr;
-    grid-column: 3/4;
-    grid-row: 1/3;
+.activity .card-member {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+  padding: 10px;
 }
 
-.container .user-info .box-1{
- background: rgb(94, 142, 177);
- 
+.container .user-info {
+  display: grid;
+  grid-template-rows: 75px 180px 100px AUTO 1fr;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
 }
 
-.container .user-info .box-2{
+.container .user-info .box-1 {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.container .user-info .box-1 i {
+  font-size: 30px;
+  color: #696969;
+}
+
+.container .user-info .box-2 {
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .user-info .box-2 img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.container .user-info .box-2 h5 {
+  color: #b0abe2;
+}
+
+.container .user-info .box-3 .box {
+  background: #f0ecff;
+  width: 280px;
+  height: 90px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+}
+
+.container .user-info .box-3 .box .item-1, .container .user-info .box-3 .box .item-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .user-info .box-3 .box .troph {
+  width: 40px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.container .user-info .box-3 i {
+  color: #b0abe2;
+  font-size: 22px;
+}
+.container .user-info .box-3 .item-2 i, .container .user-info .box-3 .item-1 h4 {
+  color: #947dd2;
+  
+}
+.container .user-info .box-3 .item-2 i, .container .user-info .box-3 .item-2 h4 {
+  color: #f47c51;
+  
+}
+.container .user-info .box-3 {
+  margin: 0 auto;
+}
+.container .user-info  .user-title{
+ display: flex;
  align-items: center;
- justify-content: center;
- flex-direction: column;
+ justify-content: space-between;
+ padding: 15px;
+}
+.container .user-info .box-4  .tesk-1{
+  background: #f47c51;
+  margin: 0px 15px;
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+ align-items: center;
+ color: #fff;
+}
 
- }
- .container .user-info .box-2 img{
-width: 150px;
- }
-
- .container .user-info .box-3{
-   margin:0 auto;
-width: 250px;
-background: rgb(171, 163, 209);
-display: grid;
-border-radius: 8px;
-grid-template-columns: 1fr 1fr;
-
-
- }
- .conatiner .user-info .box-3 .algo{
-   background: #fff;
+.container .user-info .box-4  .tesk-1 div:nth-child(1){
+  display: grid;
+  place-items: center;
+  background: #ffffff47;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin: 10px;
+  border-radius: 8px;
  
- }
+}
+.container .user-info .box-4  .tesk-2{
+  background: #6458f3;
+  margin: 10px 15px;
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+ align-items: center;
+ color: #fff;
 
-
- .container .user-info .box-4{
-  background: rgb(117, 118, 189);
- }
-
- .container .user-info .box-5{
-  background: rgb(177, 245, 219);
- }
-
-
-
-.content .activity{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    margin:20px ;
 }
 
-.content .activity div{
-   background: #f8fafd;
-    
+.container .user-info .box-4  .tesk-2 div:nth-child(1){
+  display: grid;
+  place-items: center;
+  background: #ffffff47;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+ 
+}
+.container .user-info .box-5 .recent-task{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px;
 }
 
-.activity .card-member img{
-    width: 30px;
-}
 
-.activity .card-member {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 15px;
-    padding: 10px;
+.container .user-info .box-5 .recent-task .status{
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-
-h3{
-    font-size: 14px;
-}
-
-h4{
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-h5{
-    font-size: 10px;
-    margin-top: 10px;
+.container .user-info .box-5 .recent-task .ball{
+  background: #40c17d;
+width: 10px;
+height: 10px;
+  border-radius: 50%;
 }
