@@ -12,6 +12,9 @@ import { PaginaComponent } from './components/pagina/pagina.component';
 import { LogComponent } from './components/log/log.component';
 import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TaskComponent } from './components/task/task.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import { EquipeComponent } from './components/equipe/equipe.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PaginaComponent,
     LogComponent,
     CriarUsuarioComponent,
-    DashboardComponent
+    DashboardComponent,
+    TaskComponent,
+    TodolistComponent,
+    EquipeComponent
 
   ],
   imports: [

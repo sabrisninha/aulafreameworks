@@ -9,6 +9,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { LogComponent } from './components/log/log.component';
 import { CriarUsuarioComponent } from './components/criar-usuario/criar-usuario.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TaskComponent } from './components/task/task.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import { EquipeComponent } from './components/equipe/equipe.component';
+
 
 
 const routes: Routes = [
@@ -21,6 +25,11 @@ const routes: Routes = [
     {path: 'log', component:LogComponent},
     {path: 'criar-usuario', component:CriarUsuarioComponent},
     {path: 'dashboard', component:DashboardComponent},
+    {
+      path: 'task', component:TaskComponent
+    },
+    {path: 'equipe', component:EquipeComponent},
+    {path: 'task', component:TodolistComponent},
     {path: '', redirectTo: '/login', pathMatch :'full'},
     {path:'**', component: PageNotFoundComponent },
 
