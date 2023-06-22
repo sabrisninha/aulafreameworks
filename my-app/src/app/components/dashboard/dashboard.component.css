@@ -115,6 +115,9 @@ h5 {
 .content .ad .graph {
   background: #f0edfe;
 }
+.graph img{
+  width:280px;
+}
 
 section {
   display: grid;
