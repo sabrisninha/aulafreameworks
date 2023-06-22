@@ -1,6 +1,14 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <div class="container">
     <form action="#">
-
+<div class="msgg" *ngIf="isError">
+    <i class='bx bx-error-circle'></i>
+    <span>Task não Cadastrada </span>
+</div>
+<div class="msg" *ngIf="isSucess">
+    <i class="bx bx-check-circle"> </i>
+    <span>Task Cadastrada</span>
+</div>
 <div class="form-group">
     <label for="txtNome">Task</label>
     <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome da tarefa"/>
@@ -21,8 +29,8 @@
 <img src="./assets/t.png" alt="">
     <div class="button">
         
-    <button>Cancelar</button>
-    <button>Cadastrar</button>
+    <button >Cancelar</button>
+    <button (click)="addTask()">Cadastrar</button>
 </div>
 
 

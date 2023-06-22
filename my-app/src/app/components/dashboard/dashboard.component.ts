@@ -13,5 +13,8 @@ export class DashboardComponent {
     console.log('add task');
     this.router.navigateByUrl('/task')
   }
-
+  addMembros(){
+    console.log('add membros');
+    this.router.navigateByUrl('/membros')
+  }
 }

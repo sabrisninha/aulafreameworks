@@ -12,6 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
+import { MembrosComponent } from './components/membros/membros.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
     {
       path: 'task', component:TaskComponent
     },
+    {path: 'membros', component:MembrosComponent},
     {path: 'equipe', component:EquipeComponent},
     {path: 'task', component:TodolistComponent},
     {path: '', redirectTo: '/login', pathMatch :'full'},

@@ -15,6 +15,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
+import { MembrosComponent } from './components/membros/membros.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { EquipeComponent } from './components/equipe/equipe.component';
     DashboardComponent,
     TaskComponent,
     TodolistComponent,
-    EquipeComponent
+    EquipeComponent,
+    MembrosComponent
 
   ],
   imports: [
